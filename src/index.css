@@ -1,0 +1,305 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Variables */
+:root {
+  /* colors */
+  --primary: #ffffff;
+  --secondary: #ef233c;
+  --dark: black;
+  --gray: #d9d9d9;
+  /* family */
+  --font-title: "Sora", sans-serif;
+  --font-content: "Inter", sans-serif;
+  --font-subtitle: "Poppins", sans-serif;
+
+  /* weight */
+  /* --weight-title:800;
+  --weight-titleOne:700;
+  --weight-content:300;
+  --weight-subtitle:300; */
+
+  /* size */
+  --text-3xl: 120px;
+  --text-xxl: 72px;
+  --text-xl: 36px;
+  --text-md: 24px;
+  --text-sm: 18px;
+  --text-xsm: 16px;
+}
+::selection {
+  background: black;
+  color: yellow;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    color:var(--color-primary)
+} */
+
+/* Font Family */
+.font-title {
+  font-family: var(--font-title);
+}
+.font-subtitle {
+  font-family: var(--font-subtitle);
+}
+.font-content {
+  font-family: var(--font-content);
+}
+
+/* Font Size */
+.text-3xl {
+  font-size: var(--text-3xl);
+}
+.text-xl {
+  font-size: var(--text-xl);
+}
+.text-xxl {
+  font-size: var(--text-xxl);
+}
+.text-md {
+  font-size: var(--text-md);
+}
+.text-sm {
+  font-size: var(--text-sm);
+}
+.text-xsm {
+  font-size: var(--text-xsm);
+}
+
+/* Font Weight */
+.bold {
+  font-weight: 700;
+}
+
+.bolder {
+  font-weight: 800;
+}
+.light {
+  font-weight: 400;
+}
+.lighter {
+  font-weight: 300;
+}
+
+/* Font Color */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+/* universal classes */
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+.d-flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.content-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+/* universal classes ends */
+
+.hero-section {
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.72);
+  background-blend-mode: soft-light;
+}
+.navbar {
+  padding: 40px 110px;
+}
+.contact-container {
+  line-height: 24px;
+}
+.hero-TypesMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.hero-textMain {
+  line-height: 75px;
+  margin: 3% auto auto 10%;
+}
+.hero-typesText {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  width: 80%;
+  /* padding: 2em; */
+}
+.hero_data{
+  width: 50%;
+}
+.text_div {
+  padding: 2em;
+  border: 1px solid red;
+
+}
+/* About  */
+.About-section {
+  padding: 40px 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About-section .subtitleOne {
+  margin: 40px auto 20px 0;
+}
+.About-section .subtitleTwo {
+  width: 70%;
+}
+.About-section .aboutDetails {
+  margin: 40px auto auto 0;
+  /* width: 90%; */
+  display: flex;
+  /* justify-content:center; */
+  flex-wrap: wrap;
+}
+
+.detailsElement {
+  margin: 20px 60px;
+}
+
+.detailsElement:first-child,
+.detailsElement:nth-child(4) {
+  margin-left: 0;
+}
+
+/* Portfolio Section */
+/* .portfolio-section {
+  height: 550px;
+} */
+.portfolio-SubSection:first-child {
+  background-color: var(--gray);
+}
+.portfolio-SubSection:nth-child(2) {
+  background-color: var(--dark);
+}
+
+/* .slick-dots li button:before {
+  color: var(--color-secondary);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--secondary);
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.75;
+  color: var(--primary);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: var(--secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sliderSectionOne {
+  /* background: rgba(250, 176, 164, 0.38); 
+  width: 298px;
+} */
+
+.title_POrtfolio {
+  margin: 50px auto 20px 70px;
+}
+
+/* steps */
+.Steps_Section {
+  padding: 50px;
+}
+.steps_Title {
+  width: 70%;
+}
+.hex_section {
+  position: relative;
+  margin: -15% auto auto auto;
+}
+.hexagon {
+  padding: 50px;
+  width: 230px;
+  height: 200px;
+  background: var(--secondary);
+  clip-path: polygon(100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%, 75% 0%);
+  /* transform: rotate(90deg);   */
+  background-image: url(./images/bg.png);
+  background-color: rgba(0, 0, 0, 0.495);
+  background-blend-mode: soft-light;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.hex_section div:nth-child(1),
+.hex_section div:nth-child(3) {
+  top: 50%;
+  position: absolute;
+}
+
+.hex_section div:nth-child(2) {
+  z-index: -1;
+}
+.hex_section div:nth-child(1) {
+  left: -80%;
+}
+.hex_section div:nth-child(3) {
+  margin-left: 80%;
+}
+
+.portfolio_Btn {
+  background: var(--secondary);
+}
+.footer {
+  border-top: 1px solid black;
+}
